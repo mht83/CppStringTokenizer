@@ -9,7 +9,7 @@
 std:: vector<std:: string> splitStringByDelimiters(const std:: string& str, const std:: string delimiters) {
     std:: vector<std:: string> tokens;
     std:: string token;
-    size_t start = 0, end = 0;
+    int start = 0, end = 0;
 
     while ((end = str.find_first_of(delimiters.data(), start)) != std::string::npos) {
         if (end != start) {
